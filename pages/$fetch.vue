@@ -3,10 +3,10 @@ const completed = ref('false');
 
 const todos = await $fetch('https://jsonplaceholder.typicode.com/todos', {
   params: {
-    completed: completed.value,
+    completed: completed.value, // with ".value"
   },
 });
-console.log('Count:', todos.length);
+console.log('[$fetch] TODO Count:', todos.length);
 </script>
 
 <template>

@@ -13,7 +13,7 @@ if (error.value) {
   // Handle error
   console.log(error);
 }
-console.log('Count:', todos.value?.length);
+console.log('[useFetch] TODO Count:', todos.value?.length);
 
 await useFetch('https://hub.dummyapis.com/delay?seconds=1', {
   // lazy: true, // Resolve async function after loading the route
