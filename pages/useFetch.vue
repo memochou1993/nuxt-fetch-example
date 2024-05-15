@@ -3,7 +3,7 @@ const completed = ref('false');
 
 const { data: todos, error, refresh } = await useFetch('https://jsonplaceholder.typicode.com/todos', {
   params: {
-    completed: completed.value,
+    completed: completed, // without ".value"
   },
   // watch: false, // Disable watching for changes
   // immediate: false, // Do not fetch immediately
